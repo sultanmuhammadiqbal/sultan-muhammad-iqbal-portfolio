@@ -1,0 +1,2 @@
+import { mkdir, cp, rm } from 'node:fs/promises';
+const dist='dist';await rm(dist,{recursive:true,force:true});await mkdir(dist,{recursive:true});for(const name of ['index.html','about.html','experience.html','projects.html','project.html','styles.css','app.js','robots.txt'])await cp(name,dist+'/'+name);await cp('data',dist+'/data',{recursive:true});await cp('assets',dist+'/assets',{recursive:true});console.log('Built static website at dist/');
