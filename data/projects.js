@@ -155,7 +155,7 @@ window.PORTFOLIO_PROJECTS = [
     "previewNote": "Cuplikan visual dari CV; bukan bukti deployment live.",
     "repo": "https://github.com/sultanmuhammadiqbal/campaign-health-checker",
     "demo": "https://campaign-health-checker.vercel.app/",
-    "image": "assets/campaign-health.webp",
+    "image": "assets/campaign-health.svg",
     "accent": "purple"
   },
   {
@@ -179,7 +179,7 @@ window.PORTFOLIO_PROJECTS = [
     "previewNote": "Cuplikan visual dari CV; bukan bukti deployment live.",
     "repo": "https://github.com/sultanmuhammadiqbal/google-ads-diagnostic-dashboard",
     "demo": "https://google-ads-diagnostic-dashboard-apdus47ji-iqbal13.vercel.app/#/ringkasan",
-    "image": "assets/google-ads.webp",
+    "image": "assets/google-ads.svg",
     "accent": "orange"
   },
   {
@@ -201,7 +201,7 @@ window.PORTFOLIO_PROJECTS = [
     "role": "Work documented in CV",
     "evidence": "CV 2026",
     "previewNote": "Cuplikan visual dari CV; bukan bukti deployment live.",
-    "image": "assets/ai-reporting.webp",
+    "image": "assets/ai-reporting.svg",
     "accent": "lime"
   },
   {
@@ -244,7 +244,7 @@ window.PORTFOLIO_PROJECTS = [
     "role": "Work documented in CV",
     "evidence": "CV 2026",
     "previewNote": "Cuplikan visual dari CV; bukan bukti deployment live.",
-    "image": "assets/video-symphony.webp",
+    "image": "assets/video-symphony.svg",
     "accent": "purple"
   },
   {
@@ -266,7 +266,7 @@ window.PORTFOLIO_PROJECTS = [
     "role": "Work documented in CV",
     "evidence": "CV 2026",
     "previewNote": "Cuplikan visual dari CV; bukan bukti deployment live.",
-    "image": "assets/product-content.webp",
+    "image": "assets/product-content.svg",
     "accent": "orange"
   },
   {
@@ -288,7 +288,7 @@ window.PORTFOLIO_PROJECTS = [
     "role": "Work documented in CV",
     "evidence": "CV 2026",
     "previewNote": "Cuplikan visual dari CV; bukan bukti deployment live.",
-    "image": "assets/motion-graphic.webp",
+    "image": "assets/motion-graphic.svg",
     "accent": "lime"
   },
   {
@@ -310,7 +310,7 @@ window.PORTFOLIO_PROJECTS = [
     "role": "Work documented in CV",
     "evidence": "CV 2026",
     "previewNote": "Cuplikan visual dari CV; bukan bukti deployment live.",
-    "image": "assets/performance-analysis.webp",
+    "image": "assets/performance-analysis.svg",
     "accent": "blue"
   },
   {
@@ -331,7 +331,7 @@ window.PORTFOLIO_PROJECTS = [
     "role": "Work documented in CV",
     "evidence": "CV 2026",
     "previewNote": "Cuplikan visual dari CV; bukan bukti deployment live.",
-    "image": "assets/brand-guide.webp",
+    "image": "assets/brand-guide.svg",
     "accent": "purple"
   },
   {
@@ -352,7 +352,7 @@ window.PORTFOLIO_PROJECTS = [
     "role": "Work documented in CV",
     "evidence": "CV 2026",
     "previewNote": "Cuplikan visual dari CV; bukan bukti deployment live.",
-    "image": "assets/attendance.webp",
+    "image": "assets/attendance.svg",
     "accent": "orange"
   },
   {
