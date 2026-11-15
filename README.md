@@ -30,7 +30,7 @@ Static output is `dist/`. On Vercel set build command `npm run build` and output
 
 ## Project data
 
-Edit `data/projects.js`. Each project includes title, category, status, problem, method, result/limitation, tags and supporting evidence. Existing CV screenshot images live under `assets/`. Other cards use clearly labeled conceptual artwork, not fabricated product screenshots.
+Edit `data/projects.js`. Each project includes title, category, status, problem, method, result/limitation, tags and supporting evidence. The GitHub version currently uses clearly labeled SVG placeholders in `assets/` because the connector cannot transfer the original binary WebP screenshots. The full-resolution CV screenshots are retained in the original local ZIP from ChatGPT; replace placeholders with the approved WebP assets before publishing.
 
 ## Privacy and publication gates
 
@@ -42,23 +42,14 @@ Edit `data/projects.js`. Each project includes title, category, status, problem,
 6. Links copied from the CV are included for discovery but Vercel availability was **not** independently confirmed.
 7. Public repo `NOVA-AI-Production-PM` was empty at intake; current project shows as planned rather than delivered.
 8. Repo `brief-to-proposal-website-jasa` is private; there is no public code link. Another private repository was excluded due to insufficient public-safe description.
-9. `assets/` includes screenshots/diagrams and portrait extracted from user-provided CV. Confirm copyright/publication rights before the public site goes live.
+9. The GitHub source currently includes SVG placeholders, not the original CV screenshot/portrait binaries. Confirm copyright/publication rights before uploading any actual CV imagery.
 10. Optional fonts are loaded from Google Fonts; system-font fallback works without network access.
 
-## To push to a *new* GitHub repository
+## GitHub status (15 November 2026)
 
-Create an **empty** repo named `sultan-muhammad-iqbal-portfolio` in the account, then from this directory:
+This repository now contains the portfolio v0.1 source, five HTML pages, catalog data, scripts, styles and labeled SVG fallbacks. Binary screenshots from the CV are **not** yet mirrored in GitHub. The original ZIP produced in ChatGPT contains the full WebP screenshots and can be used to replace these placeholders manually.
 
-```bash
-git init
-git checkout -b main
-git add .gitignore README.md package.json scripts tests assets data *.html *.css *.js robots.txt
-git commit -m "feat: initial personal portfolio prototype"
-git remote add origin https://github.com/sultanmuhammadiqbal/sultan-muhammad-iqbal-portfolio.git
-git push -u origin main
-```
-
-No action is required against `template-website-jasa`. The connected GitHub integration could read and edit existing repositories but did not expose a create-new-repository action in this session, so this deliverable is packaged locally, not pushed.
+The public repo is intentionally not indexed and has no live Vercel deployment from this operation.
 
 ## Next iteration
 
