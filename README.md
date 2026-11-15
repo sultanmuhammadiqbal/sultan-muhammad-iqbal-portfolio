@@ -26,7 +26,27 @@ npm test
 npm run build
 ```
 
-Static output is `dist/`. On Vercel set build command `npm run build` and output directory `dist`; no framework is required.
+Static output is `dist/`. **The personal portfolio is hosted on Cloudflare Pages (not Vercel).** SaaS and digital-product demos may still link to their independent Vercel deployments.
+
+## Cloudflare Pages deployment
+
+**One-time account setup required:** in [Cloudflare Dashboard](https://dash.cloudflare.com/), go to **Workers & Pages > Create application > Pages > Connect to Git**, authorize your GitHub account, and select `sultanmuhammadiqbal/sultan-muhammad-iqbal-portfolio`.
+
+| Setting | Value |
+| --- | --- |
+| Project name | `sultan-muhammad-iqbal-portfolio` (if available) |
+| Framework preset | None / no framework |
+| Production branch | `main` |
+| Root directory | Repository root (`/`) |
+| Build command | `npm run build` |
+| Build output directory | `dist` |
+| Node.js version | `22.23.4` (pinned via `.node-version`) |
+| Environment secrets | None required |
+
+Click **Save and Deploy** (or equivalent). Cloudflare will provide the actual `*.pages.dev` URL after a successful first deployment. Once connected, subsequent pushes to `main` automatically redeploy via Cloudflare's Git integration; other branches may receive preview deployments. No Vercel deployment is needed for this portfolio. See [Cloudflare's Git integration guide](https://developers.cloudflare.com/pages/get-started/git-integration/).
+
+**Publication warning:** the website currently has `noindex,nofollow` and `robots.txt` disallowing crawlers. That does **not** make the Cloudflare URL private: anyone with the link can still open it. Review claims, employer material, images, and contacts before promoting the URL publicly. To restrict access to reviewers only, configure Cloudflare Access separately.
+
 
 ## Project data
 
@@ -39,7 +59,7 @@ Edit `data/projects.js`. Each project includes title, category, status, problem,
 3. Current contact CTA points only to the public GitHub profile. Enable other contact channels only after approval.
 4. Work results are **self-reported in the uploaded CV** and require verification / permission before public release. Do not assume brands have approved promotional reuse.
 5. 'Ruang Reka' and 'Bengkel Rapi' are fictional business demos, not client work.
-6. Links copied from the CV are included for discovery but Vercel availability was **not** independently confirmed.
+6. Links copied from the CV to separately hosted project demos (including Vercel) are included for discovery, but their availability was **not** independently confirmed.
 7. Public repo `NOVA-AI-Production-PM` was empty at intake; current project shows as planned rather than delivered.
 8. Repo `brief-to-proposal-website-jasa` is private; there is no public code link. Another private repository was excluded due to insufficient public-safe description.
 9. The GitHub source currently includes SVG placeholders, not the original CV screenshot/portrait binaries. Confirm copyright/publication rights before uploading any actual CV imagery.
@@ -49,7 +69,7 @@ Edit `data/projects.js`. Each project includes title, category, status, problem,
 
 This repository now contains the portfolio v0.1 source, five HTML pages, catalog data, scripts, styles and labeled SVG fallbacks. Binary screenshots from the CV are **not** yet mirrored in GitHub. The original ZIP produced in ChatGPT contains the full WebP screenshots and can be used to replace these placeholders manually.
 
-The public repo is intentionally not indexed and has no live Vercel deployment from this operation.
+The public repo is intentionally not indexed. Cloudflare Pages account linking and the first live deployment require a one-time action from the Cloudflare account owner; GitHub commits alone do not publish the site to Cloudflare.
 
 ## Next iteration
 
